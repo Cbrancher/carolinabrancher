@@ -1,0 +1,15 @@
+.h1{
+    text-align: center;
+}
+.FotoCv:{
+    @media (min-width: 768px) { 
+         width: 100%;
+         padding: 100%
+         display: flex;
+         aligh-items: center;
+
+        
+    
+       
+    }
+}
