@@ -35,8 +35,8 @@ const NosotrosPage = (props) => {
                </div> 
                <div className="persona">
                 <img src="images/nosotros/nosotros2.jpg" width="75" alt="Juan"/>
-                <h5>Juan Gomez</h5>
-                <h6>Gerente General</h6>
+                <h5>Diana Reyes</h5>
+                <h6>Gerente Comercial</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                  Suspendisse commodo quis velit ac viverra. Duis ac sodales lacus.
                  Nam faucibus lorem at dui eleifend, eu ultricies nisl scelerisque. 
@@ -49,8 +49,8 @@ const NosotrosPage = (props) => {
                </div> 
                <div className="persona">
                 <img src="images/nosotros/nosotros3.jpg" width="75" alt="Juan"/>
-                <h5>Juan Gomez</h5>
-                <h6>Gerente General</h6>
+                <h5>Roberto Zaptos</h5>
+                <h6>Gerente de Sistemas</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                  Suspendisse commodo quis velit ac viverra. Duis ac sodales lacus.
                  Nam faucibus lorem at dui eleifend, eu ultricies nisl scelerisque. 
@@ -63,8 +63,8 @@ const NosotrosPage = (props) => {
                </div> 
                <div className="persona">
                 <img src="images/nosotros/nosotros4.jpg" width="75" alt="Juan"/>
-                <h5>Juan Gomez</h5>
-                <h6>Gerente General</h6>
+                <h5>Sandra Mastropiero</h5>
+                <h6>Gerente de Marketing</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                  Suspendisse commodo quis velit ac viverra. Duis ac sodales lacus.
                  Nam faucibus lorem at dui eleifend, eu ultricies nisl scelerisque. 
@@ -77,8 +77,8 @@ const NosotrosPage = (props) => {
                </div> 
                <div className="persona">
                 <img src="images/nosotros/nosotros5.jpg" width="75" alt="Juan"/>
-                <h5>Juan Gomez</h5>
-                <h6>Gerente General</h6>
+                <h5>Luciano Figuero</h5>
+                <h6>Gerente Logistica</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                  Suspendisse commodo quis velit ac viverra. Duis ac sodales lacus.
                  Nam faucibus lorem at dui eleifend, eu ultricies nisl scelerisque. 
