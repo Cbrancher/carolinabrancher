@@ -10,7 +10,7 @@ var session = require('express-session');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login'); 
-var loginRouter = require('./routes/admin/novedades');
+var adminRouter = require('./routes/admin/novedades');
 const { Cookie } = require('express-session');
 
 var app = express();
@@ -30,7 +30,7 @@ app.use(session({
   secret:'diplomatura22',
   cookie:{maxAge: null },
   resave:false,
-  saveUninitialized: true,
+  saveUninitialized: true
 }))
 
 secured = async (req, res, next) => {
@@ -47,14 +47,14 @@ secured = async (req, res, next) => {
 }
 
 app.use('/', indexRouter);
-app.use('./users', usersRouter);
-app.use('./admin/login', loginRouter);
-app.use('./admin/novedades', adminRouter);
+app.use('/users', usersRouter);
+app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', secured, adminRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
-});
+}); 
 
 // error handler
 app.use(function(err, req, res, next) {
