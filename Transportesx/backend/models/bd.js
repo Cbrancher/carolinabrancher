@@ -8,6 +8,8 @@ var pool = mysql.createPool({
     password: process.env.MYSQL_PASSWORD,
     database: process.env.MYSQL_DB_NAME
 });
+    port:process.env.MYSQL_PORT
+
 pool.query = util.promisify(pool.query);
 
 module.exports = pool;
