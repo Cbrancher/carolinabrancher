@@ -33,7 +33,7 @@ async function getNovedades () {
 async function modificarNovedadById(obj, id) {
     try{
     var query = "update novedades set? where id =?";
-    var rows = await pool.query(query, [id]);
+    var rows = await pool.query(query, [obj, id]);
     return rows;
 } catch (error){
     throw error;

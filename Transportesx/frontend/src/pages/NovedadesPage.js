@@ -24,7 +24,7 @@ const NovedadesPage = (props) => {
     return (
         <section className="holder"> 
              <h2>Novedades</h2>
-            {loading? (
+            {loading  ? (
                <p>Cargando...</p> 
             ) : (
                 novedades.map(item=> <NovedadItem key ={item.id} title = { item.titulo} subtitle= {item.subtitulo} imagen={ item.imagen} body={item.cuerpo}/>)

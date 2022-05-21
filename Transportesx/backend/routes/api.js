@@ -7,18 +7,18 @@ router.get('/novedades', async function(req, res, next) {
     let novedades = await novedadesModel.getNovedades();
     
     novedades = novedades.map (novedades  => {
-      if (novedad.img_id){
+      if (novedades.img_id){
         const imagen = cloudinary.url (novedades.img_id, {
             width:960,
             height:200,
             crop:'fill' 
         });
         return{
-          ...novedad, imagen
+          ...novedades, imagen
         }
       } else {
           return {
-            ...novedad, imagen: ''
+            ...novedades, imagen: ''
           }
       }
     }); 
